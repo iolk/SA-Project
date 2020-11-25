@@ -1,0 +1,3 @@
+[submodule "CupCarbon"]
+	path = CupCarbon
+	url = https://github.com/iolk/CupCarbon.git
