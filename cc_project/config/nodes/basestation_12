@@ -1,12 +1,12 @@
 List of parameters
 ------------------------------------------
 device_type:4
-device_id:4
-device_longitude:-2.350130081176758
-device_latitude:53.5214311503241
+device_id:12
+device_longitude:-2.349100112915039
+device_latitude:53.51530731598271
 device_elevation:0.0
 device_radius:0.0
 device_hide:0
 device_draw_battery:false
 device_sensor_unit_radius:20.0
-device_script_file_name:SINK.csc
+device_script_file_name:CONTROLLER.csc

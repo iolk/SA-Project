@@ -1,4 +1,5 @@
-set topic "sensor_power"
+set produce_topic "sensor_power"
+set consume_topic "adaptations"
 set first_sep ","
 set second_sep "::"
 set n_sensor 4
@@ -32,6 +33,7 @@ if(tmp != "")
         set i 1
         while(i<n_sensor)
             vget tmp powers i
+            vset 0 updated i
             set comparator $n_sensor
             dec comparator
             if(i != comparator)
@@ -42,6 +44,6 @@ if(tmp != "")
             inc i
         end
         print $power_message
-        function y kafkaProduce $topic,$power_message
+        function y kafkaProduce $produce_topic,$power_message
     end
 end
